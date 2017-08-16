@@ -63,7 +63,7 @@ EX:
         android:layout_height="wrap_content"
         android:text="Custom Font"
         ...
-        app:fontStyle="regular"/>
+        app:fontStyle="black"/>
 ```
 *Black Italic*
 ```xml
