@@ -10,7 +10,7 @@ If you create a subdirectory you'll pay attention to declare it at initializatio
 
 ## Initialization
 Declare a custom extension of Application class and inside `onCreate()` method define the fonts:
-```
+```java
             FontUtil.getInstance()
                 .setFont(FontUtil.FontStyle.LIGHT,"Muli-Light.ttf")
                 .setFont(FontUtil.FontStyle.REGULAR,"Muli-Regular.ttf")
@@ -25,7 +25,7 @@ Declare a custom extension of Application class and inside `onCreate()` method d
 ## Use
 You can use TextView with custom font just declaring it on xml file:
 
-```
+```xml
 <me.bemind.customfontlibrary.CustomFontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +57,7 @@ with relative italic style:
 EX: 
 
 *Black*
-```
+```xml
 <me.bemind.customfontlibrary.CustomFontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@ EX:
         app:fontStyle="regular"/>
 ```
 *Black Italic*
-```
+```xml
 <me.bemind.customfontlibrary.CustomFontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
