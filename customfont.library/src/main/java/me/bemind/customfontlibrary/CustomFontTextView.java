@@ -1,6 +1,7 @@
 package me.bemind.customfontlibrary;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
@@ -13,7 +14,7 @@ public class CustomFontTextView extends AppCompatTextView {
     public CustomFontTextView(Context context) {
         super(context);
         if(!this.isInEditMode()){
-
+            setTypeface(FontUtil.getInstance().getFont(FontUtil.FontStyle.REGULAR));
         }
     }
 
@@ -34,14 +35,26 @@ public class CustomFontTextView extends AppCompatTextView {
 
     private void init(AttributeSet attrs) {
         if(attrs!=null){
+            TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.CustomFontTextView);
 
+            String font = FontUtil.getInstance().getFont(
+                    a.getInt(R.styleable.CustomFontTextView_fontStyle, FontUtil.FontStyle.REGULAR.id)
+            );
+
+
+            if(font!=null){
+                setTypeface(font);
+            }
+            a.recycle();
         }
     }
 
     private void setTypeface(String font){
         try {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(),font);
-            setTypeface(tf);
+            if(font!=null) {
+                Typeface tf = Typeface.createFromAsset(getContext().getAssets(), font);
+                setTypeface(tf);
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
