@@ -1,6 +1,8 @@
 # CustomFontText
 Android text with custom fonts in your application in simple way
 
+![example image custom font android](https://github.com/chemickypes/CustomFontText/blob/develop/custom_font_image_example.png)
+
 # Getting Started
 
 ## Add fonts
