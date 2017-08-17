@@ -5,6 +5,15 @@ Android text with custom fonts in your application in simple way
 
 # Getting Started
 
+## Integration
+
+Gradle:
+```
+dependencies {
+    compile 'me.bemind.customfont:customfont:0.0.1'
+}
+```
+
 ## Add fonts
 
 You have to add your fonts into `assets/` directory.
