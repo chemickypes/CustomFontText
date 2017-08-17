@@ -22,7 +22,8 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        app:fontStyle="regular_italic"/>
+        app:fontStyle="regular_italic"
+        android:id="@+id/customFontTextView" />
 
     <me.bemind.customfontlibrary.CustomFontTextView
         android:layout_width="wrap_content"
@@ -33,7 +34,8 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        app:fontStyle="black"/>
+        app:fontStyle="black"
+        android:id="@+id/customFontTextView2" />
 
 
     <me.bemind.customfontlibrary.CustomFontEditText
@@ -45,7 +47,18 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        app:fontStyle="light_italic"/>
+        app:fontStyle="light_italic"
+        android:id="@+id/customFontEditText" />
+
+    <me.bemind.customfontlibrary.CustomFontButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customFontEditText"
+        android:layout_marginTop="20dp"
+        android:text="Custom semibold Button"
+        app:fontStyle="semibold"
+        android:layout_alignRight="@+id/customFontEditText"
+        android:layout_alignEnd="@+id/customFontEditText" />
 
 
 </RelativeLayout>

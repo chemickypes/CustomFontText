@@ -24,4 +24,7 @@
     <declare-styleable name="CustomFontEditText">
         <attr name="fontStyle"/>
     </declare-styleable>
+    <declare-styleable name="CustomFontButton">
+        <attr name="fontStyle"/>
+    </declare-styleable>
 </resources>
