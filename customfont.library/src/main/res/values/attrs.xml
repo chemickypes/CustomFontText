@@ -21,4 +21,7 @@
     <declare-styleable name="CustomFontTextView">
         <attr name="fontStyle"/>
     </declare-styleable>
+    <declare-styleable name="CustomFontEditText">
+        <attr name="fontStyle"/>
+    </declare-styleable>
 </resources>
