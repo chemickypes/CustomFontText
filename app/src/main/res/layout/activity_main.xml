@@ -36,4 +36,16 @@
         app:fontStyle="black"/>
 
 
+    <me.bemind.customfontlibrary.CustomFontEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Light Italic Font"
+        android:textSize="20sp"
+        android:layout_marginTop="95dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:fontStyle="light_italic"/>
+
+
 </RelativeLayout>
