@@ -36,6 +36,7 @@ You can use TextView with custom font just declaring it on xml file:
 ### Not only TextView
 This library let you use EditText and Button too:
 
+
 ```xml
 <me.bemind.customfontlibrary.CustomFontEditText
         android:layout_width="wrap_content"
@@ -44,6 +45,15 @@ This library let you use EditText and Button too:
         android:textSize="20sp"
         app:fontStyle="light_italic"/>
 ```
+
+```xml
+<me.bemind.customfontlibrary.CustomFontButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom semibold Button"
+        app:fontStyle="semibold" />
+```
+
 ### Options
 Inside xml file you haven't to declare name of the font, but you have to specify the style of it (weight and italic).
 The options can be:
